@@ -1,0 +1,59 @@
+{
+  "name": "ppex-component-library",
+  "author": "Oscar Fernandez",
+  "private": false,
+  "version": "1.0.4",
+  "type": "module",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oscarfzz/-doomity-ppex-component-library"
+  },
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --p ./tsconfig-build.json && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "peerDependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "7.6.6",
+    "@storybook/addon-interactions": "7.6.6",
+    "@storybook/addon-links": "7.6.6",
+    "@storybook/addon-onboarding": "1.0.10",
+    "@storybook/blocks": "7.6.6",
+    "@storybook/react": "7.6.6",
+    "@storybook/react-vite": "7.6.6",
+    "@storybook/testing-library": "0.2.2",
+    "@types/node": "20.10.5",
+    "@types/react": "18.2.45",
+    "@types/react-dom": "18.2.18",
+    "@typescript-eslint/eslint-plugin": "6.16.0",
+    "@typescript-eslint/parser": "6.16.0",
+    "@vitejs/plugin-react": "4.2.1",
+    "eslint": "8.56.0",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-react-refresh": "0.4.5",
+    "eslint-plugin-storybook": "0.6.15",
+    "glob": "10.3.10",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "storybook": "7.6.6",
+    "typescript": "5.3.3",
+    "vite": "5.0.10",
+    "vite-plugin-dts": "3.7.0",
+    "vite-plugin-lib-inject-css": "1.3.0"
+  }
+}
